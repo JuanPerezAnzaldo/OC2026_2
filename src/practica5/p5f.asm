@@ -8,9 +8,9 @@ _start:
     mov edx, msg          ; edx = dirección de la cadena msg
     call puts             ; imprime cadena
     
-    mov ebx, msg
+    mov ebx, msg + 3
     mov esi, 4
-    mov byte [ebx + esi*4 + 3], '%'
+    mov byte [ebx + esi*4], '%'
     
     mov edx, msg
     call puts
