@@ -7,8 +7,11 @@ _start:
     ; --- IMPRIMIR CADENA COMPLETA ---
     mov edx, msg          ; edx = dirección de la cadena msg
     call puts             ; imprime cadena
-	
-    mov byte [msg], 'Z'
+    
+    mov ebx, msg
+    mov esi, 7
+    mov byte [ebx + esi + 8], 'P'
+    
     mov edx, msg
     call puts
     
