@@ -11,7 +11,7 @@ _start:
     mov ebx, msg
     mov esi, 25
     mov byte [ebx + esi], 'Z'
-    
+
     mov edx, msg
     call puts
     

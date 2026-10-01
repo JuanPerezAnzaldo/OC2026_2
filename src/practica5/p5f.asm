@@ -9,8 +9,8 @@ _start:
     call puts             ; imprime cadena
     
     mov ebx, msg
-    mov esi, 2
-    mov byte [ebx + esi*9 + 1], '%'
+    mov esi, 4
+    mov byte [ebx + esi*4 + 3], '%'
     
     mov edx, msg
     call puts
