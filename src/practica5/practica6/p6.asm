@@ -160,7 +160,7 @@ mov edx, msg
 
 section .data
     lenCad  equ 255
-    msg     db "Ingrese una cadena: ", 0
+    msg     db "cadena: ", 0
     msgMay  db "mayusculas: ", 0
     msgMin  db 0x0A,"minusculas: ", 0
 
